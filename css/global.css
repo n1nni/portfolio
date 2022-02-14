@@ -1,0 +1,355 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header {
+  width: 100%;
+  height: 70px;
+  background-color: #be3144;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body header ul li {
+  margin-right: 50px;
+}
+
+body header ul li a {
+  font-size: 30px;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body header ul li a:hover {
+  color: #d7d5e4;
+}
+
+body .typewriter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  min-height: 300px;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+body .typewriter h1 {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+          animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  height: 30px;
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #c8e73c;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #c8e73c;
+  }
+}
+
+body .typewriter p {
+  color: #be3144;
+}
+
+body #projects {
+  background-color: #45567d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #projects .project-div-container {
+  padding: 70px 30px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 2000px;
+  width: 100%;
+}
+
+body #projects .project-div-container .title {
+  margin-bottom: 40px;
+}
+
+body #projects .project-div-container .title h5 {
+  font-size: 40px;
+  color: #ffffff;
+  -webkit-text-decoration: underline wavy #ffffff 5px;
+          text-decoration: underline wavy #ffffff 5px;
+}
+
+body #projects .project-div-container .some-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+}
+
+@media (max-width: 680px) {
+  body #projects .project-div-container .some-projects {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body #projects .project-div-container .some-projects .project-block {
+  position: relative;
+  height: 300px;
+  max-width: 300px;
+  width: 100%;
+  -webkit-transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
+  margin-bottom: 30px;
+}
+
+body #projects .project-div-container .some-projects .project-block img {
+  width: 100%;
+  height: 80%;
+}
+
+body #projects .project-div-container .some-projects .project-block .project-tile {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3a3d40;
+  margin-top: -10px;
+}
+
+body #projects .project-div-container .some-projects .project-block .project-tile p {
+  font-size: 30px;
+  color: white;
+}
+
+body #projects .project-div-container .some-projects .project-block a {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: black;
+  font-size: 30px;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+body #projects .project-div-container .some-projects .project-block a div {
+  width: 100%;
+  height: 35px;
+  background-color: #be3144;
+}
+
+body #projects .project-div-container .some-projects .project-block:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  opacity: 0.8;
+}
+
+body #projects .project-div-container .some-projects .project-block:hover a {
+  display: block;
+  opacity: 1;
+}
+
+body #projects .project-div-container .some-projects .project-block:hover a:hover {
+  color: white;
+}
+
+body #projects .project-div-container .more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+}
+
+body #projects .project-div-container .more-btn a .show {
+  width: 200px;
+  height: 40px;
+  background-color: #3a3d40;
+  border: none;
+  font-size: 20px;
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+  color: white;
+}
+
+body #projects .project-div-container .more-btn a .show:hover {
+  background-color: #be3144;
+  cursor: pointer;
+}
+
+body footer {
+  background-color: #45567d;
+  border-top: 3px solid #be3144;
+  padding: 40px 0;
+}
+
+body footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .footer-container p {
+  color: #ffffff;
+  font-size: 20px;
+}
+/*# sourceMappingURL=global.css.map */

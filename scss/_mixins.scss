@@ -1,0 +1,5 @@
+@mixin flex-jc-ai($justify-p,$align-p){
+    display: flex;
+    justify-content: $justify-p;
+    align-items: $align-p;
+}
